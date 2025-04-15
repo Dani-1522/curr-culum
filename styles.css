@@ -296,44 +296,96 @@ footer .social-links img {
 }
 
 /* Responsive Design (Opcional) */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
+
+@media (max-width: 576px) {
+    
+    .section{
+        padding: 20px;
+    }
+    .section h2 {
+        font-size: 2em; /* Reduce el tamaño del título de las secciones en móviles */
+        margin-bottom: 20px;
+    }
+
+    header .navbar-brand {
+        font-size: 1.5em; /* Reduce el tamaño del logo en móviles */
+    }
+
+    .carousel-item {
+        height: auto; /* Permite que la altura del carrusel se ajuste al contenido en móviles */
+    }
+
+    .carousel-caption {
+        padding-top: 1rem;
+        padding-bottom: 1rem; /* Reduce el padding del texto del carrusel en móviles */
+    }
+
+    .carousel-caption h1 {
+        font-size: 2em; /* Reduce el tamaño del título del carrusel en móviles */
+    }
+
+    .carousel-caption p {
+        font-size: 1em; /* Reduce el tamaño del párrafo del carrusel en móviles */
+        display: none; /* Oculta el párrafo en pantallas muy pequeñas si es necesario */
+    }
+
+    .education-item {
+        flex-direction: column; /* Apila la imagen y el texto en la sección de educación en móviles */
         align-items: flex-start;
     }
 
-    header nav {
-        margin-top: 10px;
+    .education-item img {
+        width: 100%; /* La imagen ocupa todo el ancho disponible en móviles */
+        max-height: 200px; /* Limita la altura de la imagen si es necesario */
+        margin-bottom: 15px;
     }
 
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+    .skills-container {
+        flex-direction: column; /* Apila las categorías de habilidades en móviles */
     }
 
-    header nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
+    .skills-category {
+        min-width: auto; /* Permite que las categorías de habilidades ocupen el ancho disponible */
+        margin-bottom: 20px;
     }
 
-    .hero {
-        padding: 80px 0;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .skills-list {
-        justify-content: flex-start;
+    #contacto .container {
+        padding: 20px; /* Reduce el padding del formulario de contacto en móviles */
     }
 
     footer .container {
-        flex-direction: column;
+        flex-direction: column; /* Apila los elementos del footer en móviles */
         align-items: center;
+        text-align: center;
     }
 
     footer .social-links {
         margin-top: 10px;
+        margin-left: 0; /* Elimina el margen izquierdo en móviles */
+    }
+
+    footer .social-links a {
+        margin: 0 10px; /* Ajusta el margen entre los enlaces sociales en móviles */
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .section {
+        padding: 70px 0; /* Ajusta el padding de las secciones para tabletas */
+    }
+
+    .section h2 {
+        font-size: 2.2em; /* Ajusta el tamaño del título de las secciones para tabletas */
+    }
+
+    .carousel-item {
+        height: 450px; /* Ajusta la altura del carrusel para tabletas */
+    }
+
+    .education-item {
+        gap: 15px; /* Reduce el espacio entre la imagen y el texto en tabletas */
+    }
+
+    .education-item img {
+        width: 200px; /* Reduce el ancho de la imagen en tabletas */
     }
 }
