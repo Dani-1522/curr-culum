@@ -1,0 +1,339 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1e3932; /* Un verde oscuro similar al de Starbucks */
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #fff; /* Fondo blanco para el encabezado */
+    padding: 15px 0; /* Reduje el padding del encabezado */
+    border-bottom: 1px solid #dee2e6; /* Borde más claro del encabezado */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar-brand {
+    font-size: 1.8em;
+    color: #007bff; /* Color primario para el logo/nombre */
+    text-decoration: none;
+}
+
+header .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a.nav-link {
+    text-decoration: none;
+    color: #343a40; /* Color de texto para los enlaces de navegación */
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem; /* Añadí un poco de padding a los enlaces */
+}
+
+header nav ul li a.nav-link:hover {
+    color: #007bff; /* Color primario al pasar el ratón */
+}
+
+.carousel-item{
+    background-color: #f8f9fa;
+    height: 550px;
+}
+.carousel-item a{
+    background-color: #00704a;
+    color: #ddd; 
+
+}
+.carousel-item  img{
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.carousel-caption h1{
+    color: #333;
+}
+.carousel-caption p{
+    color: #777;
+}
+.carousel-caption h1, h5, .carousel-caption p {
+    color: #111;
+}
+
+/* Estilos de la sección de Experiencia */
+.experience-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.experience-item h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.experience-item .date {
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.experience-item ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #343a40;
+}
+
+/* Estilos de la sección de Educación */
+.education-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.education-item img{
+    width: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    object-fit: contain;
+}
+
+.education-item h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.education-item .date {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.education-item ul{
+    list-style: disc;
+}
+
+/* Estilos de la sección de Habilidades */
+.skills-container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.skills-category{
+    flex: 1;
+    min-width: 300px;
+}
+
+.skills-category h3{
+    font-size: 1.6rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.skills-group{
+    margin-bottom: 20px;
+}
+.skills-group h4{
+    font-size: 1.1em;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+ }
+
+.skills-list li {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+#contacto .container{
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#contacto .lead{
+    color:#6c757d;
+    margin-bottom: 25px;
+    text-align: left;
+}
+#contacto .form-group{
+    margin-bottom: 5px;
+}
+
+#contacto label{
+    display: block;
+    margin-bottom: 5px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#contacto .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+#contacto .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    padding: 10px 20px;
+    border-radius:5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+#contacto button.btn-primary:hover {
+    background-color: #0056b3;
+}
+#contacto .alert {
+    margin-top: 20px;
+}
+/* Estilos del pie de página */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.0em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+footer .social-links a {
+    display: inline-block;
+    margin-left: 15px;
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+footer .social-links a:hover{
+    color: #007bff;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Responsive Design (Opcional) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .skills-list {
+        justify-content: flex-start;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-links {
+        margin-top: 10px;
+    }
+}
